@@ -1,11 +1,10 @@
 import smtplib
 import random
-from flask import Flask, render_template
-
+# from flask import Flask, render_template
 
 # Function to generate a random OTP
 def generate_otp():
-    return random.randint(1000, 9999)
+    return random.randint(10000, 99999)
 
 # Function to send an OTP via email
 def send_otp_email(receiver_email, otp):
