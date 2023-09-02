@@ -402,7 +402,7 @@ def owneraddProperty(request):
 
         try:
             Property.objects.create(user=userType, type=typeid, city=cityid, propertytitle=propertytitle, propertydescription=propertydescription, status=status,
-                                      location=location, bedrooms=bedrooms, bathrooms=bathrooms, floors=floors, garages=garages, area=area, size=size,
+                                    location=location, bedrooms=bedrooms, bathrooms=bathrooms, floors=floors, garages=garages, area=area, size=size,
                                     rentorsaleprice=rentorsaleprice, beforepricelabel=beforepricelabel, afterpricelabel=afterpricelabel, propertyid=propertyid, centercooling=centercooling,
                                     balcony=balcony, petfriendly=petfriendly, barbeque=barbeque, firealarm=firealarm, modernkitchen=modernkitchen, storage=storage, dryer=dryer,
                                     heating=heating, pool=pool, laundry=laundry, sauna=sauna, gym=gym, elevator=elevator, dishwasher=dishwasher, emergencyexit=emergencyexit,
