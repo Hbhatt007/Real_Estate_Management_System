@@ -1,5 +1,7 @@
 import smtplib
 import random
+from flask import Flask, render_template
+
 
 # Function to generate a random OTP
 def generate_otp():
@@ -22,9 +24,12 @@ def send_otp_email(receiver_email, otp):
         server.sendmail(sender_email, receiver_email, message)
         print("OTP sent successfully!")
         server.quit()
+        return True
+
     except Exception as e:
         print(f"Error: {e}")
         print("Failed to send OTP.")
+        return False
 
 # Function to verify the entered OTP
 def verify_otp(otp, user_input):
